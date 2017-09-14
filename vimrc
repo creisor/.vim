@@ -9,7 +9,6 @@ colorscheme sorcerer
 "set guifont=Inconsolata:h18
 
 "basic look when opening
-set lines=35 columns=170
 set colorcolumn=80
 set number
 
@@ -39,3 +38,7 @@ autocmd FileType make set noexpandtab
 set hlsearch "highlight matched words
 "cancel search with escape:
 nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+
+"NERDTree
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
