@@ -46,5 +46,7 @@ set hlsearch "highlight matched words
 nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 
 "NERDTree
-autocmd vimenter * NERDTree
+"start NERDTree when opening vim:
+"autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
