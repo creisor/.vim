@@ -3,7 +3,13 @@ execute pathogen#infect()
 "help from: http://marcgg.com/blog/2016/03/01/vimrc-example/
 filetype on
 syntax on
-colorscheme sorcerer
+if has('gui_running')
+  " GUI colors
+  colorscheme sorcerer
+else
+  " Non-GUI (terminal) colors
+  colorscheme default
+endif
 
 "Font
 "set guifont=Inconsolata:h18
