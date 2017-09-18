@@ -1,7 +1,7 @@
 execute pathogen#infect()
 
 "help from: http://marcgg.com/blog/2016/03/01/vimrc-example/
-filetype on
+filetype plugin indent on
 syntax on
 if has('gui_running')
   " GUI colors
