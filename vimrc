@@ -12,7 +12,7 @@ else
 endif
 
 "Font
-"set guifont=Inconsolata:h18
+set guifont=Inconsolata\ 12
 
 "basic look when opening
 set colorcolumn=80
