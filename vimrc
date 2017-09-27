@@ -12,7 +12,11 @@ else
 endif
 
 "Font
-set guifont=Inconsolata\ 12
+if has("gui_macvim")
+  set guifont=Inconsolata:h13
+else
+  set guifont=Inconsolata\ 12
+endif
 
 "basic look when opening
 set colorcolumn=80
@@ -57,7 +61,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_auto_jump = 0
 let g:syntastic_ruby_checkers = ['rubocop', 'mri', 'jruby']
