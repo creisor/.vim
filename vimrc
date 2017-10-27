@@ -5,7 +5,7 @@ filetype plugin indent on
 syntax on
 if has('gui_running')
   " GUI colors
-  colorscheme sorcerer
+  colorscheme base16-default-dark
 else
   " Non-GUI (terminal) colors
   colorscheme default
