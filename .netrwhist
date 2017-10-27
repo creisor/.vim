@@ -1,3 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =2
 let g:netrw_dirhist_1='/Users/creisor/git/ops-config/homedirs/ranand'
+let g:netrw_dirhist_2='/Users/creisor/git/ops-config/bin'
