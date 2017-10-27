@@ -60,6 +60,12 @@ let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave = 1
 "let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_enabled = ['vet', 'errcheck']
+"GoAlternate switches between a file and its _test file
+"AV opens in a vertical split, AS horizontal, AT new tb
+autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
+autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 
 "syntastic
 set statusline+=%#warningmsg#
