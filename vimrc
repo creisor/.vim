@@ -8,7 +8,11 @@ if has('gui_running')
   colorscheme base16-default-dark
 else
   " Non-GUI (terminal) colors
-  colorscheme default
+  if filereadable( expand("$HOME/.vim/colors/base16-default-dark.vim") )
+    colorscheme base16-default-dark
+  else
+    colorscheme default
+  endif
 endif
 
 "Font
