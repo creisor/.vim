@@ -61,9 +61,8 @@ map <leader>n :NERDTreeToggle<CR>
 
 "vim-go
 let g:go_fmt_command = "goimports"
-let g:go_metalinter_autosave = 1
-"let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_enabled = ['vet', 'errcheck']
+"let g:go_metalinter_autosave_enabled = ['errcheck', 'vet', 'golint']
+let g:go_metalinter_autosave_enabled = ['errcheck']
 ":GoDef
 "Use ctrl-] or gd to jump to a definition, locally or globally
 "Use ctrl-t to jump back to the previous location
@@ -74,7 +73,7 @@ autocmd FileType go nmap <Leader>v <Plug>(go-def-vertical)
 autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
-autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
+autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tab')
 
 "syntastic
 set statusline+=%#warningmsg#
