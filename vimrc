@@ -89,3 +89,5 @@ let g:syntastic_ruby_checkers = ['rubocop', 'mri', 'jruby']
 "disabling linter:
 "let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
 let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
+
+let vim_markdown_preview_github=1
