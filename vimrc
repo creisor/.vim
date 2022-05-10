@@ -6,14 +6,13 @@ syntax on
 if has('gui_running')
   " GUI colors
   colorscheme base16-default-dark
+else
   " Non-GUI (terminal) colors
-  "if filereadable( expand("$HOME/.vim/colors/base16-default-dark.vim") )
-  "  colorscheme base16-default-dark
+  if filereadable( expand("$HOME/.vim/colors/base16-default-dark.vim") )
+    colorscheme base16-default-dark
   else
-  "  colorscheme default
-  "endif
-  colorscheme sorcerer
-  " delek also seems nice
+    colorscheme default
+  endif
 endif
 
 "Font
