@@ -57,7 +57,7 @@ nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 "start NERDTree when opening vim:
 "autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
-map <leader>n :NERDTreeToggle<CR>
+map <leader>nt :NERDTreeToggle<CR>
 
 "vim-go
 let g:go_fmt_command = "goimports"
