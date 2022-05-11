@@ -90,3 +90,4 @@ let g:syntastic_ruby_checkers = ['rubocop', 'mri', 'jruby']
 let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
 
 let vim_markdown_preview_github=1
+let vim_markdown_preview_hotkey='<C-m>'
