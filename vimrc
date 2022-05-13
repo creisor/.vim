@@ -85,6 +85,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_auto_jump = 0
 let g:syntastic_ruby_checkers = ['rubocop', 'mri', 'jruby']
+let g:syntastic_python_checkers = ['python']
 "disabling linter:
 "let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
 let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
