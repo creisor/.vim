@@ -92,6 +92,9 @@ let g:syntastic_python_checkers = ['python']
 "disabling linter:
 "let g:syntastic_go_checkers = ['go', 'golint', 'govet', 'errcheck']
 let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
+"terraform stuf
+let g:terraform_fmt_on_save=1
+let g:terraform_align=1
 
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
