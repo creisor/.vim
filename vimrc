@@ -91,3 +91,6 @@ let g:syntastic_go_checkers = ['go', 'govet', 'errcheck']
 
 let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
+
+"airline
+let g:airline_theme='base16_default_dark'
