@@ -48,6 +48,9 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 autocmd FileType make set noexpandtab
 
+"line numbers background is compatible
+highlight clear LineNr
+
 "searching
 set hlsearch "highlight matched words
 "cancel search with escape:
@@ -94,4 +97,4 @@ let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
 
 "airline
-let g:airline_theme='base16_default_dark'
+let g:airline_theme='google_dark'
