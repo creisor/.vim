@@ -27,7 +27,7 @@ endif
 set number
 
 "re-source .vimrc by running \s
-map <leader>s :source ~/.vimrc<CR>
+map <leader>s :source ~/.vim/vimrc<CR>
 
 "keep more info in memory to speed things up
 set hidden
