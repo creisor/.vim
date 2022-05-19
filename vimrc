@@ -66,7 +66,8 @@ map <leader>nt :NERDTreeToggle<CR>
 let g:go_fmt_command = "goimports"
 "let g:go_metalinter_autosave_enabled = ['errcheck', 'vet', 'golint']
 let g:go_metalinter_autosave_enabled = ['errcheck']
-let g:go_imports_mode='gopls'
+let g:go_imports_mode = 'gopls'
+let g:go_imports_autosave = 1
 ":GoDef
 "Use ctrl-] or gd to jump to a definition, locally or globally
 "Use ctrl-t to jump back to the previous location
