@@ -48,6 +48,13 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype python setlocal ts=4 sw=4 expandtab
 autocmd FileType make set noexpandtab
 
+"quick way to quote things \q" or \q'
+"or \qd to remove quotes
+" https://stackoverflow.com/a/2148221
+:nnoremap <Leader>q" ciw""<Esc>P
+:nnoremap <Leader>q' ciw''<Esc>P
+:nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
+
 "line numbers background is compatible
 highlight clear LineNr
 
