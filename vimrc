@@ -110,3 +110,7 @@ let vim_markdown_preview_hotkey='<C-m>'
 
 "airline
 let g:airline_theme='google_dark'
+
+autocmd Filetype json
+  \ let g:indentLine_setConceal = 0 |
+  \ let g:vim_json_syntax_conceal = 0
