@@ -49,3 +49,6 @@
 [submodule "bundle/vim-helm"]
 	path = bundle/vim-helm
 	url = git@github.com:towolf/vim-helm.git
+[submodule "bundle/bats"]
+	path = bundle/bats
+	url = git@github.com:aliou/bats.vim.git
