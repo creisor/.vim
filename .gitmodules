@@ -52,3 +52,6 @@
 [submodule "bundle/bats"]
 	path = bundle/bats
 	url = git@github.com:aliou/bats.vim.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter.git
